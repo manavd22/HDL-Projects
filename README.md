@@ -1,7 +1,7 @@
-# Verilog HDL Projects Portfolio
+# Verilog & SystemVerilog HDL Projects Portfolio
 **Digital Design Projects for VLSI/Semiconductor Applications**
 
-[![Verilog](https://img.shields.io/badge/Language-Verilog-blue.svg)](https://en.wikipedia.org/wiki/Verilog)
+[![HDL](https://img.shields.io/badge/HDL-Verilog%20%7C%20SystemVerilog-blue.svg)](https://en.wikipedia.org/wiki/SystemVerilog)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Complete-success.svg)]()
 
@@ -9,18 +9,26 @@
 
 ## 📋 Overview
 
-This repository contains professional-grade digital design projects implemented in Verilog HDL, demonstrating skills essential for ASIC/FPGA design roles in the semiconductor industry. Each project includes complete RTL design, comprehensive testbenches, synthesis constraints, and detailed documentation.
+This repository contains digital design projects implemented in Verilog and SystemVerilog HDL, demonstrating skills essential for ASIC/FPGA design roles in the semiconductor industry. They range from classic FSM and arithmetic designs to a hardware accelerator for Vision Transformer self-attention. Each project includes RTL design, testbenches, and documentation.
 
-**Author:** [Manav Dalela]
+**Author:** Manav Dalela
 
 ---
 
 ## 🚀 Projects
 
+| # | Project | Language | Highlights |
+|---|---------|----------|------------|
+| 1 | [Traffic Light Controller](#1-traffic-light-controller) | Verilog | 8-state Moore FSM, pedestrian & emergency override |
+| 2 | [Booth's Algorithm Multiplier](#2-booths-algorithm-multiplier) | Verilog | Radix-2 signed multiplication, parameterizable width |
+| 3 | [TASAD – ViT Self-Attention Accelerator](#3-tasad--vision-transformer-self-attention-accelerator) | SystemVerilog | Bit-exact against golden model across all 4,096 outputs |
+
+---
+
 ### 1. Traffic Light Controller
 **Advanced FSM-based Traffic Management System**
 
-A comprehensive 4-way intersection traffic light controller featuring pedestrian crossing support, emergency vehicle override, and configurable timing parameters.
+A 4-way intersection traffic light controller with pedestrian crossing support, emergency vehicle override, and configurable timing parameters.
 
 📁 **Directory:** `traffic_light_controller/`
 
@@ -59,14 +67,61 @@ A clean implementation of Booth's algorithm for signed multiplication, demonstra
 - Signed number handling
 - Efficient hardware design
 - Algorithm optimization
-  
+
+---
+
+### 3. TASAD – Vision Transformer Self-Attention Accelerator
+**Hardware Accelerator for Transformer Attention, built at the NCKU AISSM Semiconductor Summer School 2026 (Taiwan)**
+
+TASAD is a SystemVerilog RTL accelerator for the self-attention computation at the core of Vision Transformers (ViT). Self-attention is dominated by large matrix multiplications, which makes it a natural target for dedicated hardware. The design was verified **bit-exactly against a golden reference model across all 4,096 attention-score outputs**, and taken through a synthesis flow.
+
+📁 **Directory:** `tasad/`
+
+**Features:**
+- ✅ Synthesizable SystemVerilog RTL for ViT self-attention
+- ✅ Bit-exact match with golden reference model (4,096 / 4,096 outputs)
+- ✅ Golden reference model for automated result comparison
+- ✅ Simulation and synthesis flows driven by a `Makefile`
+- ✅ Synthesis reports included
+
+**Project Structure:**
+```
+tasad/
+├── src/            # SystemVerilog RTL source
+├── sim/            # Testbenches and simulation setup
+├── model/          # Golden reference model
+├── syn/            # Synthesis scripts and constraints
+├── reports/        # Synthesis / simulation reports
+├── script/         # Helper scripts
+├── tools/          # Tool utilities
+├── demo/           # Demo files
+├── Makefile        # Build, simulate and synthesize
+└── requirements.txt
+```
+
+**Getting Started:**
+```bash
+cd tasad
+pip install -r requirements.txt   # Python dependencies for the reference model / scripts
+make                              # see Makefile for available targets
+```
+
+**Skills Demonstrated:**
+- Hardware acceleration of AI/ML workloads
+- Datapath design for matrix operations
+- Fixed-point arithmetic and bit-exact verification
+- Golden-model-based verification methodology
+- RTL-to-synthesis flow with Makefile automation
+
 ---
 
 ## 🛠️ Technology Stack
 
 ### Languages & Tools
-- **HDL:** Verilog
+- **HDL:** Verilog, SystemVerilog
 - **Simulation:** Xilinx Vivado
+- **Scripting:** Python, Make
+- **Flow:** RTL design → simulation → golden-model comparison → synthesis
 
 ### Design Methodology
 - Synchronous design principles
@@ -74,7 +129,7 @@ A clean implementation of Booth's algorithm for signed multiplication, demonstra
 - Modular and parameterizable designs
 - Separation of datapath and control
 - Industry-standard coding practices
-  
+
 ---
 
 ## 🎯 Skills Demonstrated
@@ -83,18 +138,20 @@ A clean implementation of Booth's algorithm for signed multiplication, demonstra
 - ✅ **Finite State Machines (FSM)** - Moore and Mealy architectures
 - ✅ **Sequential Logic** - Registers, counters, state machines
 - ✅ **Combinational Logic** - Arithmetic units, multiplexers, decoders
+- ✅ **Hardware Accelerators** - Datapaths for Transformer self-attention
 - ✅ **Timing Analysis** - Setup/hold time, clock domains
 - ✅ **Design Constraints** - SDC files for synthesis
 
-### Verilog HDL
+### Verilog / SystemVerilog HDL
 - ✅ **Parameterizable Design** - Reusable, scalable modules
 - ✅ **Blocking vs Non-blocking** - Proper usage for synthesis
 - ✅ **Synthesis-Friendly Coding** - Industry best practices
 - ✅ **Module Hierarchy** - Structured design approach
-- ✅ **Signed Arithmetic** - Two's complement operations
+- ✅ **Signed & Fixed-Point Arithmetic** - Two's complement operations
 
 ### Verification
 - ✅ **Self-Checking Testbenches** - Automated pass/fail verification
+- ✅ **Golden-Model Comparison** - Bit-exact checking against a reference model
 - ✅ **Coverage-Driven Testing** - 100% state/functional coverage
 - ✅ **Corner Case Testing** - Edge conditions and fault scenarios
 - ✅ **Waveform Analysis** - VCD generation and debugging
@@ -102,6 +159,8 @@ A clean implementation of Booth's algorithm for signed multiplication, demonstra
 
 ---
 
+## 📬 Contact
 
-<div align="center">
+**Manav Dalela** · BTech Electronics and Communication Engineering (minor specialization in VLSI Design), Manipal Institute of Technology (MAHE, India)
+Feel free to reach out via GitHub for questions or collaboration.
 </div>
