@@ -15,6 +15,16 @@ This repository contains digital design projects implemented in Verilog and Syst
 
 ---
 
+## 📂 Repository Structure
+
+```
+├── Personal Projects/   # Verilog projects: Traffic Light Controller, Booth's Multiplier
+├── TASAD/               # SystemVerilog ViT self-attention accelerator (NCKU AISSM 2026)
+└── README.md
+```
+
+---
+
 ## 🚀 Projects
 
 | # | Project | Language | Highlights |
@@ -30,7 +40,7 @@ This repository contains digital design projects implemented in Verilog and Syst
 
 A 4-way intersection traffic light controller with pedestrian crossing support, emergency vehicle override, and configurable timing parameters.
 
-📁 **Directory:** `traffic_light_controller/`
+📁 **Directory:** [`Personal Projects/`](Personal%20Projects)
 
 **Features:**
 - ✅ 8-state Moore FSM implementation
@@ -53,7 +63,7 @@ A 4-way intersection traffic light controller with pedestrian crossing support, 
 
 A clean implementation of Booth's algorithm for signed multiplication, demonstrating arithmetic algorithm design in hardware.
 
-📁 **Directory:** `booths_multiplier/`
+📁 **Directory:** [`Personal Projects/`](Personal%20Projects)
 
 **Features:**
 - ✅ Radix-2 Booth's algorithm implementation
@@ -75,7 +85,7 @@ A clean implementation of Booth's algorithm for signed multiplication, demonstra
 
 TASAD is a SystemVerilog RTL accelerator for the self-attention computation at the core of Vision Transformers (ViT). Self-attention is dominated by large matrix multiplications, which makes it a natural target for dedicated hardware. The design was verified **bit-exactly against a golden reference model across all 4,096 attention-score outputs**, and taken through a synthesis flow.
 
-📁 **Directory:** `tasad/`
+📁 **Directory:** [`TASAD/`](TASAD)
 
 **Features:**
 - ✅ Synthesizable SystemVerilog RTL for ViT self-attention
@@ -86,7 +96,7 @@ TASAD is a SystemVerilog RTL accelerator for the self-attention computation at t
 
 **Project Structure:**
 ```
-tasad/
+TASAD/
 ├── src/            # SystemVerilog RTL source
 ├── sim/            # Testbenches and simulation setup
 ├── model/          # Golden reference model
@@ -101,7 +111,7 @@ tasad/
 
 **Getting Started:**
 ```bash
-cd tasad
+cd TASAD
 pip install -r requirements.txt   # Python dependencies for the reference model / scripts
 make                              # see Makefile for available targets
 ```
@@ -161,6 +171,5 @@ make                              # see Makefile for available targets
 
 ## 📬 Contact
 
-**Manav Dalela** · BTech Electronics and Communication Engineering (minor specialization in VLSI Design), Manipal Institute of Technology (MAHE, India)
+**Manav Dalela** · B.Tech ECE (VLSI Design minor), Manipal Institute of Technology
 Feel free to reach out via GitHub for questions or collaboration.
-</div>
