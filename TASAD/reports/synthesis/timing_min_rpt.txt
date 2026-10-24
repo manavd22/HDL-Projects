@@ -1,0 +1,711 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 10
+        -max_paths 10
+        -sort_by group
+Design : TASAD
+Version: X-2025.06
+Date   : Fri Aug  7 12:13:13 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: u_matmul/mac_array_out_reg_63__13_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__13_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__13_/CK (DFFR_X1)        0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__13_/QN (DFFR_X1)        0.036      0.536 f
+  u_matmul/U40/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113502/ZN (OAI222_X1)                        0.029      0.593 r
+  u_matmul/max_lvl1_reg_7__13_/D (DFFR_X1)               0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__13_/CK (DFFR_X1)              0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/mac_array_out_reg_63__11_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__11_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__11_/CK (DFFR_X1)        0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__11_/QN (DFFR_X1)        0.036      0.536 f
+  u_matmul/U42/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113603/ZN (OAI222_X1)                        0.029      0.593 r
+  u_matmul/max_lvl1_reg_7__11_/D (DFFR_X1)               0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__11_/CK (DFFR_X1)              0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/mac_array_out_reg_63__9_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__9_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__9_/CK (DFFR_X1)         0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__9_/QN (DFFR_X1)         0.036      0.536 f
+  u_matmul/U44/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113641/ZN (OAI222_X1)                        0.029      0.593 r
+  u_matmul/max_lvl1_reg_7__9_/D (DFFR_X1)                0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__9_/CK (DFFR_X1)               0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/mac_array_out_reg_63__7_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__7_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__7_/CK (DFFR_X1)         0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__7_/QN (DFFR_X1)         0.036      0.536 f
+  u_matmul/U46/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113414/ZN (OAI222_X1)                        0.029      0.593 r
+  u_matmul/max_lvl1_reg_7__7_/D (DFFR_X1)                0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__7_/CK (DFFR_X1)               0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/mac_array_out_reg_63__5_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__5_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__5_/CK (DFFR_X1)         0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__5_/QN (DFFR_X1)         0.036      0.536 f
+  u_matmul/U48/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113640/ZN (OAI222_X1)                        0.029      0.593 r
+  u_matmul/max_lvl1_reg_7__5_/D (DFFR_X1)                0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__5_/CK (DFFR_X1)               0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/mac_array_out_reg_63__3_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__3_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__3_/CK (DFFR_X1)         0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__3_/QN (DFFR_X1)         0.036      0.536 f
+  u_matmul/U50/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113413/ZN (OAI222_X1)                        0.029      0.593 r
+  u_matmul/max_lvl1_reg_7__3_/D (DFFR_X1)                0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__3_/CK (DFFR_X1)               0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/mac_array_out_reg_63__1_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__1_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__1_/CK (DFFR_X1)         0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__1_/QN (DFFR_X1)         0.036      0.536 f
+  u_matmul/U52/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113639/ZN (OAI222_X1)                        0.029      0.593 r
+  u_matmul/max_lvl1_reg_7__1_/D (DFFR_X1)                0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__1_/CK (DFFR_X1)               0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/mac_array_out_reg_63__13_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__13_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__13_/CK (DFFR_X1)        0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__13_/QN (DFFR_X1)        0.036      0.536 f
+  u_matmul/U40/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113502/ZN (OAI222_X1)                        0.029      0.594 r
+  u_matmul/max_lvl1_reg_7__13_/D (DFFR_X1)               0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__13_/CK (DFFR_X1)              0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/mac_array_out_reg_63__7_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__7_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__7_/CK (DFFR_X1)         0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__7_/QN (DFFR_X1)         0.036      0.536 f
+  u_matmul/U46/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113414/ZN (OAI222_X1)                        0.029      0.594 r
+  u_matmul/max_lvl1_reg_7__7_/D (DFFR_X1)                0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__7_/CK (DFFR_X1)               0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/mac_array_out_reg_63__3_
+              (rising edge-triggered flip-flop clocked by clk1)
+  Endpoint: u_matmul/max_lvl1_reg_7__3_
+            (rising edge-triggered flip-flop clocked by clk1)
+  Path Group: clk1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/mac_array_out_reg_63__3_/CK (DFFR_X1)         0.000 #    0.500 r
+  u_matmul/mac_array_out_reg_63__3_/QN (DFFR_X1)         0.036      0.536 f
+  u_matmul/U50/Z (BUF_X1)                                0.028      0.564 f
+  u_matmul/U113413/ZN (OAI222_X1)                        0.029      0.594 r
+  u_matmul/max_lvl1_reg_7__3_/D (DFFR_X1)                0.010      0.604 r
+  data arrival time                                                 0.604
+
+  clock clk1 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/max_lvl1_reg_7__3_/CK (DFFR_X1)               0.000      0.600 r
+  library hold time                                      0.004      0.604
+  data required time                                                0.604
+  --------------------------------------------------------------------------
+  data required time                                                0.604
+  data arrival time                                                -0.604
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.000
+
+
+  Startpoint: u_matmul/req_load_sync_reg_0_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/req_load_sync_reg_1_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/req_load_sync_reg_0_/CK (DFFR_X1)             0.000 #    0.500 r
+  u_matmul/req_load_sync_reg_0_/Q (DFFR_X1)              0.053      0.553 f
+  u_matmul/U70942/ZN (INV_X1)                            0.022      0.575 r
+  u_matmul/U70943/ZN (INV_X1)                            0.020      0.595 f
+  u_matmul/req_load_sync_reg_1_/D (DFFR_X1)              0.010      0.605 f
+  data arrival time                                                 0.605
+
+  clock clk2 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/req_load_sync_reg_1_/CK (DFFR_X1)             0.000      0.600 r
+  library hold time                                      0.003      0.603
+  data required time                                                0.603
+  --------------------------------------------------------------------------
+  data required time                                                0.603
+  data arrival time                                                -0.605
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.001
+
+
+  Startpoint: u_matmul/wr_col_reg_3_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/wr_col_reg_3_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  u_matmul/wr_col_reg_3_/CK (DFFR_X1)     0.000 #    0.500 r
+  u_matmul/wr_col_reg_3_/QN (DFFR_X1)     0.052      0.552 f
+  u_matmul/U70938/ZN (OAI21_X2)           0.047      0.599 r
+  u_matmul/wr_col_reg_3_/D (DFFR_X1)      0.010      0.610 r
+  data arrival time                                  0.610
+
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  clock uncertainty                       0.100      0.600
+  u_matmul/wr_col_reg_3_/CK (DFFR_X1)     0.000      0.600 r
+  library hold time                       0.003      0.603
+  data required time                                 0.603
+  -----------------------------------------------------------
+  data required time                                 0.603
+  data arrival time                                 -0.610
+  -----------------------------------------------------------
+  slack (MET)                                        0.007
+
+
+  Startpoint: u_matmul/wr_row_reg_3_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/wr_row_reg_3_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  u_matmul/wr_row_reg_3_/CK (DFFR_X1)     0.000 #    0.500 r
+  u_matmul/wr_row_reg_3_/QN (DFFR_X1)     0.052      0.552 f
+  u_matmul/U70933/ZN (OAI21_X2)           0.047      0.599 r
+  u_matmul/wr_row_reg_3_/D (DFFR_X1)      0.010      0.610 r
+  data arrival time                                  0.610
+
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  clock uncertainty                       0.100      0.600
+  u_matmul/wr_row_reg_3_/CK (DFFR_X1)     0.000      0.600 r
+  library hold time                       0.003      0.603
+  data required time                                 0.603
+  -----------------------------------------------------------
+  data required time                                 0.603
+  data arrival time                                 -0.610
+  -----------------------------------------------------------
+  slack (MET)                                        0.007
+
+
+  Startpoint: u_matmul/wr_col_reg_1_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/wr_col_reg_1_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  u_matmul/wr_col_reg_1_/CK (DFFR_X1)     0.000 #    0.500 r
+  u_matmul/wr_col_reg_1_/QN (DFFR_X1)     0.052      0.552 f
+  u_matmul/U70940/ZN (OAI21_X2)           0.047      0.600 r
+  u_matmul/wr_col_reg_1_/D (DFFR_X1)      0.010      0.610 r
+  data arrival time                                  0.610
+
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  clock uncertainty                       0.100      0.600
+  u_matmul/wr_col_reg_1_/CK (DFFR_X1)     0.000      0.600 r
+  library hold time                       0.003      0.603
+  data required time                                 0.603
+  -----------------------------------------------------------
+  data required time                                 0.603
+  data arrival time                                 -0.610
+  -----------------------------------------------------------
+  slack (MET)                                        0.008
+
+
+  Startpoint: u_matmul/wr_col_reg_4_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/wr_col_reg_4_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  u_matmul/wr_col_reg_4_/CK (DFFR_X1)     0.000 #    0.500 r
+  u_matmul/wr_col_reg_4_/QN (DFFR_X1)     0.052      0.552 f
+  u_matmul/U70937/ZN (OAI21_X2)           0.047      0.600 r
+  u_matmul/wr_col_reg_4_/D (DFFR_X1)      0.010      0.610 r
+  data arrival time                                  0.610
+
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  clock uncertainty                       0.100      0.600
+  u_matmul/wr_col_reg_4_/CK (DFFR_X1)     0.000      0.600 r
+  library hold time                       0.003      0.603
+  data required time                                 0.603
+  -----------------------------------------------------------
+  data required time                                 0.603
+  data arrival time                                 -0.610
+  -----------------------------------------------------------
+  slack (MET)                                        0.008
+
+
+  Startpoint: u_matmul/wr_row_reg_1_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/wr_row_reg_1_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  u_matmul/wr_row_reg_1_/CK (DFFR_X1)     0.000 #    0.500 r
+  u_matmul/wr_row_reg_1_/QN (DFFR_X1)     0.052      0.552 f
+  u_matmul/U70935/ZN (OAI21_X2)           0.047      0.600 r
+  u_matmul/wr_row_reg_1_/D (DFFR_X1)      0.010      0.610 r
+  data arrival time                                  0.610
+
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  clock uncertainty                       0.100      0.600
+  u_matmul/wr_row_reg_1_/CK (DFFR_X1)     0.000      0.600 r
+  library hold time                       0.003      0.603
+  data required time                                 0.603
+  -----------------------------------------------------------
+  data required time                                 0.603
+  data arrival time                                 -0.610
+  -----------------------------------------------------------
+  slack (MET)                                        0.008
+
+
+  Startpoint: u_matmul/wr_row_reg_4_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/wr_row_reg_4_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  u_matmul/wr_row_reg_4_/CK (DFFR_X1)     0.000 #    0.500 r
+  u_matmul/wr_row_reg_4_/QN (DFFR_X1)     0.052      0.552 f
+  u_matmul/U70932/ZN (OAI21_X2)           0.047      0.600 r
+  u_matmul/wr_row_reg_4_/D (DFFR_X1)      0.010      0.610 r
+  data arrival time                                  0.610
+
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  clock uncertainty                       0.100      0.600
+  u_matmul/wr_row_reg_4_/CK (DFFR_X1)     0.000      0.600 r
+  library hold time                       0.003      0.603
+  data required time                                 0.603
+  -----------------------------------------------------------
+  data required time                                 0.603
+  data arrival time                                 -0.610
+  -----------------------------------------------------------
+  slack (MET)                                        0.008
+
+
+  Startpoint: u_matmul/req_load_sync_reg_0_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/req_load_sync_reg_1_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk2 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  u_matmul/req_load_sync_reg_0_/CK (DFFR_X1)             0.000 #    0.500 r
+  u_matmul/req_load_sync_reg_0_/Q (DFFR_X1)              0.058      0.558 r
+  u_matmul/U70942/ZN (INV_X1)                            0.021      0.579 f
+  u_matmul/U70943/ZN (INV_X1)                            0.020      0.599 r
+  u_matmul/req_load_sync_reg_1_/D (DFFR_X1)              0.010      0.610 r
+  data arrival time                                                 0.610
+
+  clock clk2 (rise edge)                                 0.000      0.000
+  clock network delay (ideal)                            0.500      0.500
+  clock uncertainty                                      0.100      0.600
+  u_matmul/req_load_sync_reg_1_/CK (DFFR_X1)             0.000      0.600 r
+  library hold time                                      0.002      0.602
+  data required time                                                0.602
+  --------------------------------------------------------------------------
+  data required time                                                0.602
+  data arrival time                                                -0.610
+  --------------------------------------------------------------------------
+  slack (MET)                                                       0.008
+
+
+  Startpoint: u_matmul/wr_col_reg_2_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/wr_col_reg_2_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  u_matmul/wr_col_reg_2_/CK (DFFR_X1)     0.000 #    0.500 r
+  u_matmul/wr_col_reg_2_/QN (DFFR_X1)     0.053      0.553 f
+  u_matmul/U70939/ZN (OAI21_X2)           0.048      0.601 r
+  u_matmul/wr_col_reg_2_/D (DFFR_X1)      0.010      0.611 r
+  data arrival time                                  0.611
+
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  clock uncertainty                       0.100      0.600
+  u_matmul/wr_col_reg_2_/CK (DFFR_X1)     0.000      0.600 r
+  library hold time                       0.003      0.603
+  data required time                                 0.603
+  -----------------------------------------------------------
+  data required time                                 0.603
+  data arrival time                                 -0.611
+  -----------------------------------------------------------
+  slack (MET)                                        0.008
+
+
+  Startpoint: u_matmul/wr_row_reg_2_
+              (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_matmul/wr_row_reg_2_
+            (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TASAD              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  u_matmul/wr_row_reg_2_/CK (DFFR_X1)     0.000 #    0.500 r
+  u_matmul/wr_row_reg_2_/QN (DFFR_X1)     0.053      0.553 f
+  u_matmul/U70934/ZN (OAI21_X2)           0.048      0.601 r
+  u_matmul/wr_row_reg_2_/D (DFFR_X1)      0.010      0.611 r
+  data arrival time                                  0.611
+
+  clock clk2 (rise edge)                  0.000      0.000
+  clock network delay (ideal)             0.500      0.500
+  clock uncertainty                       0.100      0.600
+  u_matmul/wr_row_reg_2_/CK (DFFR_X1)     0.000      0.600 r
+  library hold time                       0.003      0.603
+  data required time                                 0.603
+  -----------------------------------------------------------
+  data required time                                 0.603
+  data arrival time                                 -0.611
+  -----------------------------------------------------------
+  slack (MET)                                        0.008
+
+
+1

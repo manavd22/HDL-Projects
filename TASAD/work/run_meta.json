@@ -1,0 +1,17 @@
+{
+  "image": "demo/JP.rgb",
+  "image_size": 128,
+  "patch_size": 16,
+  "token_count": 64,
+  "embedding_dim": 64,
+  "q_gain": 15.99020767211914,
+  "k_gain": 15.995234489440918,
+  "q_saturation_ratio": 0.0,
+  "k_saturation_ratio": 0.0,
+  "q_min": -59,
+  "q_max": 55,
+  "k_min": -53,
+  "k_max": 55,
+  "attention_scale": 32768,
+  "ordering": "row-major"
+}

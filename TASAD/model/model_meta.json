@@ -1,0 +1,327 @@
+{
+  "format_version": 1,
+  "endianness": "little",
+  "image_size": 128,
+  "channels": 3,
+  "patch_size": 16,
+  "token_count": 64,
+  "embedding_dim": 64,
+  "ffn_dim": 128,
+  "num_blocks": 1,
+  "num_heads": 1,
+  "num_classes": 10,
+  "q_dtype": "int8",
+  "k_dtype": "int8",
+  "tasad_output_dtype": "uint16",
+  "tasad_output_scale": 32768,
+  "layer_norm_eps": 1e-05,
+  "mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "std": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "classes": [
+    {
+      "id": 0,
+      "iso": "VN",
+      "internal_name": "vietnam",
+      "display_name": "Vietnam"
+    },
+    {
+      "id": 1,
+      "iso": "TH",
+      "internal_name": "thailand",
+      "display_name": "Thailand"
+    },
+    {
+      "id": 2,
+      "iso": "KR",
+      "internal_name": "south_korea",
+      "display_name": "Korea"
+    },
+    {
+      "id": 3,
+      "iso": "JP",
+      "internal_name": "japan",
+      "display_name": "Japan"
+    },
+    {
+      "id": 4,
+      "iso": "IN",
+      "internal_name": "india",
+      "display_name": "India"
+    },
+    {
+      "id": 5,
+      "iso": "LT",
+      "internal_name": "lithuania",
+      "display_name": "Lithuania"
+    },
+    {
+      "id": 6,
+      "iso": "BE",
+      "internal_name": "belgium",
+      "display_name": "Belgium"
+    },
+    {
+      "id": 7,
+      "iso": "CZ",
+      "internal_name": "czech_republic",
+      "display_name": "Czech Republic"
+    },
+    {
+      "id": 8,
+      "iso": "ID",
+      "internal_name": "indonesia",
+      "display_name": "Indonesia"
+    },
+    {
+      "id": 9,
+      "iso": "TW",
+      "internal_name": "taiwan",
+      "display_name": "Taiwan"
+    }
+  ],
+  "tensors": [
+    {
+      "name": "patch_embedding.weight",
+      "offset": 0,
+      "shape": [
+        64,
+        768
+      ],
+      "dtype": "float32",
+      "byte_size": 196608
+    },
+    {
+      "name": "patch_embedding.bias",
+      "offset": 196608,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "position_embedding",
+      "offset": 196864,
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 16384
+    },
+    {
+      "name": "norm1.weight",
+      "offset": 213248,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "norm1.bias",
+      "offset": 213504,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "q_proj.weight",
+      "offset": 213760,
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 16384
+    },
+    {
+      "name": "q_proj.bias",
+      "offset": 230144,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "k_proj.weight",
+      "offset": 230400,
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 16384
+    },
+    {
+      "name": "k_proj.bias",
+      "offset": 246784,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "v_proj.weight",
+      "offset": 247040,
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 16384
+    },
+    {
+      "name": "v_proj.bias",
+      "offset": 263424,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "quant.q_gain",
+      "offset": 263680,
+      "shape": [
+        1
+      ],
+      "dtype": "float32",
+      "byte_size": 4
+    },
+    {
+      "name": "quant.k_gain",
+      "offset": 263684,
+      "shape": [
+        1
+      ],
+      "dtype": "float32",
+      "byte_size": 4
+    },
+    {
+      "name": "out_proj.weight",
+      "offset": 263688,
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 16384
+    },
+    {
+      "name": "out_proj.bias",
+      "offset": 280072,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "norm2.weight",
+      "offset": 280328,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "norm2.bias",
+      "offset": 280584,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "ffn.0.weight",
+      "offset": 280840,
+      "shape": [
+        128,
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 32768
+    },
+    {
+      "name": "ffn.0.bias",
+      "offset": 313608,
+      "shape": [
+        128
+      ],
+      "dtype": "float32",
+      "byte_size": 512
+    },
+    {
+      "name": "ffn.2.weight",
+      "offset": 314120,
+      "shape": [
+        64,
+        128
+      ],
+      "dtype": "float32",
+      "byte_size": 32768
+    },
+    {
+      "name": "ffn.2.bias",
+      "offset": 346888,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "final_norm.weight",
+      "offset": 347144,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "final_norm.bias",
+      "offset": 347400,
+      "shape": [
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 256
+    },
+    {
+      "name": "classifier.weight",
+      "offset": 347656,
+      "shape": [
+        10,
+        64
+      ],
+      "dtype": "float32",
+      "byte_size": 2560
+    },
+    {
+      "name": "classifier.bias",
+      "offset": 350216,
+      "shape": [
+        10
+      ],
+      "dtype": "float32",
+      "byte_size": 40
+    }
+  ],
+  "sha256": "c869ec26a8c7406368bd5402be57493219fcff12d7f952b8fc0c7cc871fdd0c4"
+}

@@ -1,0 +1,180 @@
+ 
+****************************************
+Report : area
+Design : TASAD
+Version: X-2025.06
+Date   : Fri Aug  7 12:13:13 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /usr/cad/CBDK/Nangate45/2010.12/Front_End/Liberty/CCS/nangate45_css_fast.db)
+
+Number of ports:                         6789
+Number of nets:                        246400
+Number of cells:                       202771
+Number of combinational cells:         166402
+Number of sequential cells:             36161
+Number of macros/black boxes:               0
+Number of buf/inv:                      86035
+Number of references:                      13
+
+Combinational area:             162489.560892
+Buf/Inv area:                    48395.508183
+Noncombinational area:          166227.651207
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                328717.212100
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  -------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-    Black-
+                                  Total        Total    national     national     boxes   Design
+--------------------------------  -----------  -------  -----------  -----------  ------  ----------------------------------------------------------
+TASAD                             328717.2121    100.0      56.9240      79.8000  0.0000  TASAD
+add_45_S2                             31.3880      0.0      31.3880       0.0000  0.0000  TASAD_DW01_inc_0
+u_matmul                          305920.4796     93.1  130682.8766  154725.8108  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16
+u_matmul/add_184                      66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_63_DW01_add_64
+u_matmul/add_184_I10                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_54_DW01_add_55
+u_matmul/add_184_I11                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_53_DW01_add_54
+u_matmul/add_184_I12                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_52_DW01_add_53
+u_matmul/add_184_I13                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_51_DW01_add_52
+u_matmul/add_184_I14                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_50_DW01_add_51
+u_matmul/add_184_I15                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_49_DW01_add_50
+u_matmul/add_184_I16                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_48_DW01_add_49
+u_matmul/add_184_I17                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_47_DW01_add_48
+u_matmul/add_184_I18                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_46_DW01_add_47
+u_matmul/add_184_I19                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_45_DW01_add_46
+u_matmul/add_184_I2                   66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_62_DW01_add_63
+u_matmul/add_184_I20                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_44_DW01_add_45
+u_matmul/add_184_I21                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_43_DW01_add_44
+u_matmul/add_184_I22                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_42_DW01_add_43
+u_matmul/add_184_I23                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_41_DW01_add_42
+u_matmul/add_184_I24                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_40_DW01_add_41
+u_matmul/add_184_I25                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_39_DW01_add_40
+u_matmul/add_184_I26                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_38_DW01_add_39
+u_matmul/add_184_I27                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_37_DW01_add_38
+u_matmul/add_184_I28                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_36_DW01_add_37
+u_matmul/add_184_I29                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_35_DW01_add_36
+u_matmul/add_184_I3                   66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_61_DW01_add_62
+u_matmul/add_184_I30                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_34_DW01_add_35
+u_matmul/add_184_I31                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_33_DW01_add_34
+u_matmul/add_184_I32                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_32_DW01_add_33
+u_matmul/add_184_I33                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_31_DW01_add_32
+u_matmul/add_184_I34                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_30_DW01_add_31
+u_matmul/add_184_I35                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_29_DW01_add_30
+u_matmul/add_184_I36                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_28_DW01_add_29
+u_matmul/add_184_I37                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_27_DW01_add_28
+u_matmul/add_184_I38                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_26_DW01_add_27
+u_matmul/add_184_I39                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_25_DW01_add_26
+u_matmul/add_184_I4                   66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_60_DW01_add_61
+u_matmul/add_184_I40                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_24_DW01_add_25
+u_matmul/add_184_I41                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_23_DW01_add_24
+u_matmul/add_184_I42                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_22_DW01_add_23
+u_matmul/add_184_I43                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_21_DW01_add_22
+u_matmul/add_184_I44                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_20_DW01_add_21
+u_matmul/add_184_I45                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_19_DW01_add_20
+u_matmul/add_184_I46                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_18_DW01_add_19
+u_matmul/add_184_I47                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_17_DW01_add_18
+u_matmul/add_184_I48                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_16_DW01_add_17
+u_matmul/add_184_I49                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_15_DW01_add_16
+u_matmul/add_184_I5                   66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_59_DW01_add_60
+u_matmul/add_184_I50                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_14_DW01_add_15
+u_matmul/add_184_I51                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_13_DW01_add_14
+u_matmul/add_184_I52                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_12_DW01_add_13
+u_matmul/add_184_I53                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_11_DW01_add_12
+u_matmul/add_184_I54                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_10_DW01_add_11
+u_matmul/add_184_I55                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_9_DW01_add_10
+u_matmul/add_184_I56                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_8_DW01_add_9
+u_matmul/add_184_I57                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_7_DW01_add_8
+u_matmul/add_184_I58                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_6_DW01_add_7
+u_matmul/add_184_I59                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_5_DW01_add_6
+u_matmul/add_184_I6                   66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_58_DW01_add_59
+u_matmul/add_184_I60                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_4_DW01_add_5
+u_matmul/add_184_I61                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_3_DW01_add_4
+u_matmul/add_184_I62                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_2_DW01_add_3
+u_matmul/add_184_I63                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_1_DW01_add_2
+u_matmul/add_184_I64                  66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_0_DW01_add_1
+u_matmul/add_184_I7                   66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_57_DW01_add_58
+u_matmul/add_184_I8                   66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_56_DW01_add_57
+u_matmul/add_184_I9                   66.5000      0.0      66.5000       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW01_add_55_DW01_add_56
+u_matmul/r1098                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_63
+u_matmul/r1100                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_62
+u_matmul/r1102                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_61
+u_matmul/r1104                       251.9020      0.1     251.9020       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_60
+u_matmul/r1106                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_59
+u_matmul/r1108                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_58
+u_matmul/r1110                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_57
+u_matmul/r1112                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_56
+u_matmul/r1114                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_55
+u_matmul/r1116                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_54
+u_matmul/r1118                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_53
+u_matmul/r1120                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_52
+u_matmul/r1122                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_51
+u_matmul/r1124                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_50
+u_matmul/r1126                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_49
+u_matmul/r1128                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_48
+u_matmul/r1130                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_47
+u_matmul/r1132                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_46
+u_matmul/r1134                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_45
+u_matmul/r1136                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_44
+u_matmul/r1138                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_43
+u_matmul/r1140                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_42
+u_matmul/r1142                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_41
+u_matmul/r1144                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_40
+u_matmul/r1146                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_39
+u_matmul/r1148                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_38
+u_matmul/r1150                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_37
+u_matmul/r1152                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_36
+u_matmul/r1154                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_35
+u_matmul/r1156                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_34
+u_matmul/r1158                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_33
+u_matmul/r1160                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_32
+u_matmul/r1162                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_31
+u_matmul/r1164                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_30
+u_matmul/r1166                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_29
+u_matmul/r1168                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_28
+u_matmul/r1170                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_27
+u_matmul/r1172                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_26
+u_matmul/r1174                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_25
+u_matmul/r1176                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_24
+u_matmul/r1178                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_23
+u_matmul/r1180                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_22
+u_matmul/r1182                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_21
+u_matmul/r1184                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_20
+u_matmul/r1186                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_19
+u_matmul/r1188                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_18
+u_matmul/r1190                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_17
+u_matmul/r1192                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_16
+u_matmul/r1194                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_15
+u_matmul/r1196                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_14
+u_matmul/r1198                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_13
+u_matmul/r1200                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_12
+u_matmul/r1202                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_11
+u_matmul/r1204                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_10
+u_matmul/r1206                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_9
+u_matmul/r1208                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_8
+u_matmul/r1210                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_7
+u_matmul/r1212                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_6
+u_matmul/r1214                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_5
+u_matmul/r1216                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_4
+u_matmul/r1218                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_3
+u_matmul/r1220                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_2
+u_matmul/r1222                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_1
+u_matmul/r1224                       254.0300      0.1     254.0300       0.0000  0.0000  MATMUL_N64_DATA_WIDTH8_ACC_WIDTH16_DW_mult_tc_0
+u_norm                              9791.1943      3.0    4031.2301    5665.8002  0.0000  NORM
+u_norm/r377                           14.8960      0.0      14.8960       0.0000  0.0000  NORM_DW01_inc_0_DW01_inc_2
+u_norm/sub_83                         79.2680      0.0      79.2680       0.0000  0.0000  NORM_DW01_sub_0
+u_snu                              12837.4263      3.9    3497.1021    5756.2402  0.0000  SNU_N64
+u_snu/add_56                         107.9960      0.0     107.9960       0.0000  0.0000  SNU_N64_DW01_add_26_DW01_add_0
+u_snu/div_68                        3461.1920      1.1    3461.1920       0.0000  0.0000  SNU_N64_DW_div_uns_5
+u_snu/r378                            14.8960      0.0      14.8960       0.0000  0.0000  SNU_N64_DW01_inc_0_DW01_inc_1
+--------------------------------  -----------  -------  -----------  -----------  ------  ----------------------------------------------------------
+Total                                                   162489.5609  166227.6512  0.0000
+
+1

@@ -1,0 +1,6 @@
+`ifndef TASAD_CLOCK_CONFIG_VH
+`define TASAD_CLOCK_CONFIG_VH
+`define CYCLE1 640.0
+`define CYCLE2 10.0
+`define MAX_CLK1_CYCLES 50000000
+`endif
