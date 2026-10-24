@@ -171,5 +171,4 @@ make                              # see Makefile for available targets
 
 ## 📬 Contact
 
-**Manav Dalela** · B.Tech ECE (VLSI Design minor), Manipal Institute of Technology
-Feel free to reach out via GitHub for questions or collaboration.
+**Manav Dalela** · BTech Electronics and Communication Engineering (minor specialization in VLSI Design), Manipal Institute of Technology (MAHE, India)
